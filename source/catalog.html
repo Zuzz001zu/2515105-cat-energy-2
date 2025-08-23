@@ -11,26 +11,28 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__link" href="#">
-      <img src="icons/logo-mobile.svg" width="33" height="38" alt="Функциональное питание для котов «Cat Energy».">
-      <img src="icons/logo-name.svg" width="101" height="18" alt="Функциональное питание для котов «Cat Energy».">
-    </a>
-    <button class="page-header__button button" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="page-header__nav navigation">
-      <ul class="navigation__list navigation-list">
-        <li class="navigation-list__item navigation-list-item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="navigation-list__item navigation-list-item navigation-list-item--active">
-          <a href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="navigation-list__item navigation-list-item">
-          <a href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a class="page-header__link" href="#">
+        <img src="icons/logo-mobile.svg" width="33" height="38" alt="Функциональное питание для котов «Cat Energy».">
+        <img src="icons/logo-name.svg" width="101" height="18" alt="Функциональное питание для котов «Cat Energy».">
+      </a>
+      <button class="page-header__button button" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="page-header__nav navigation">
+        <ul class="navigation__list navigation-list">
+          <li class="navigation-list__item navigation-list-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="navigation-list__item navigation-list-item navigation-list__item--active">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation-list__item navigation-list-item">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="page-catalog">
@@ -151,6 +153,7 @@
         </li>
       </ul>
     </section>
+
     <section class="catalog-additional-goods">
       <h2 class="catalog-additional-goods__title sub-title">Дополнительные товары</h2>
       <ul class="additional-goods-list">
@@ -191,6 +194,7 @@
         <p class="additional-goods-promo__text text">Закажите все и получите чехол для кота в подарок!</p>
       </aside>
     </section>
+
     <section class="actions">
       <h2 class="actions__title sub-title">Акции и новинки</h2>
       <p class="actions__slogan">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
@@ -201,33 +205,52 @@
       </form>
     </section>
 
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <img src="#" width="640" height="724" alt="Карта">
+      <div class="container">
+        <div class="map__invitation invitation">
+          <p class="invitation__slogan">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="invitation__address">ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="page-footer">
-    <p class="page-footer__slogan footer-slogan">Приглашаем к сотрудничеству дилеров!</p>
-    <address class="page-footer__address footer-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-    <img class="page-footer__logo" src="icons/footer-logo.svg" width="128" height="24" alt="Cat Energy.">
-    <ul class="page-footer__socials-list socials-list">
-      <li class="socials-list__item social-item">
-        <a class="social-item__link" href="https://vk.com/htmlacademy">Вконтакте
-          <img src="icons/vkontakte.svg" width="28" height="22" alt="Вконтакте">
-        </a>
-      </li>
-      <li class="socials-list__item social-item">
-        <a class="social-item__link" href="https://www.youtube.com/user/htmlacademyru">Ютуб
-          <img src="icons/youtube.svg" width="28" height="22" alt="Ютуб">
-        </a>
-      </li>
-      <li class="socials-list__item social-item">
-        <a class="social-item__link" href="https://t.me/htmlacademy">Телеграм
-          <img src="icons/telegram.svg" width="28" height="22" alt="Телеграм">
-        </a>
-      </li>
-    </ul>
-    <a class="page-footer__copyright-link footer-copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-      <p class="footer-copyright-link__text copyright-text">HTML Academy</p>
-      <img class="footer-copyright-link__logo copyright-logo" src="icons/logo-html-academy.svg" width="27" height="34" alt="Лого HTML Academy">
-    </a>
+    <div class="footer-container">
+      <a class="page-footer__link-main-page link-main-page" href="index.html">
+        <img class="page-footer__logo" src="icons/footer-logo.svg" width="128" height="24" alt="Cat Energy.">
+      </a>
+      <ul class="page-footer__socials-list socials-list">
+        <li class="socials-list__item social-item">
+          <a class="social-item__link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+            <img src="icons/vkontakte.svg" width="28" height="22" alt="Вконтакте">
+          </a>
+        </li>
+        <li class="socials-list__item social-item">
+          <a class="social-item__link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+            <img src="icons/youtube.svg" width="28" height="22" alt="Ютуб">
+          </a>
+        </li>
+        <li class="socials-list__item social-item">
+          <a class="social-item__link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+            <img src="icons/telegram.svg" width="28" height="22" alt="Телеграм">
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__copyright-link footer-copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        <span class="footer-copyright-link__text copyright-text">HTML Academy</span>
+        <img class="footer-copyright-link__logo copyright-logo" src="icons/logo-html-academy.svg" width="27" height="34" alt="Лого HTML Academy">
+      </a>
+    </div>
   </footer>
 
 </body>
