@@ -6,6 +6,10 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple_180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -36,13 +40,11 @@
   </header>
 
   <main class="main-container">
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero__title hero-title">Функциональное питание для котов</h1>
-        <p class="hero__slogan hero-slogan">Занялся собой? Займись котом!</p>
-        <a class="hero__button button hero-button" href="#">Подобрать программу</a>
-        <img class="hero-img" src="images/index-cat-mobile.jpg" width="33" height="38" alt="Cat Energy.">
-      </div>
+    <section class="main-header">
+      <h1 class="main-header__title main-header-title">Функциональное питание для котов</h1>
+      <p class="main-header__slogan main-header-slogan">Занялся собой? Займись котом!</p>
+      <a class="main-header__button button main-header-button" href="#">Подобрать программу</a>
+      <img src="images/index-cat-mobile.jpg" width="33" height="38" alt="Cat Energy.">
     </section>
 
     <section class="catalog-options">
@@ -94,6 +96,34 @@
       <p class="example__sumup example-sumup">Затраты на питание:
         <span class="example__sumup-more example-sumup">5 000 руб.</span>
       </p>
+      <picture>
+        <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-before-food-tablet1x@1x.jpg 1x, images/cat-before-food-tablet2x@2x.jpg 2x">
+        <img class="example__img" src="images/cat-before-food-mobile1x@1x.jpg" srcset="images/cat-before-food-mobile2x@2x.jpg 2x" width="280" height="256" alt="Фото кота до.">
+      </picture>
+      <picture>
+        <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-after-food-tablet1x@1x.jpg 1x, images/cat-after-food-tablet2x@2x.jpg 2x">
+        <img class="example__img" src="images/cat-after-food-mobile1x@1x.jpg" srcset="images/cat-after-food-mobile2x@2x.jpg 2x" width="280" height="256" alt="Фото кота после.">
+      </picture>
+    </section>
+
+    <section class="map-section">
+      <h2 class="visually-hidden">Карта</h2>
+      <div class="map-container">
+        <div class="map">
+          <picture>
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop1x@1x.jpg 1x, images/map-desktop2x@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet1x@1x.jpg 1x, images/map-tablet2x@2x.jpg 2x">
+            <img class="map__img" src="images/map-mobile1x@1x.jpg" srcset="images/map-mobile2x@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8">
+          </picture>
+        </div>
+        <div class="map__invitation invitation">
+          <p class="invitation__slogan">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="invitation__address">ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </address>
+        </div>
+      </div>
     </section>
 
     <section class="map">
