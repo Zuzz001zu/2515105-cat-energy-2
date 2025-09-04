@@ -17,8 +17,8 @@
   <header class="page-header">
     <div class="container">
       <a class="page-header__link" href="#">
-        <img src="icons/logo-mobile.svg" width="33" height="38" alt="Функциональное питание для котов «Cat Energy».">
-        <img src="icons/logo-name.svg" width="101" height="18" alt="Функциональное питание для котов «Cat Energy».">
+        <img src="#" width="33" height="38" alt="Функциональное питание для котов «Cat Energy».">
+        <img src="#" width="101" height="18" alt="Функциональное питание для котов «Cat Energy».">
       </a>
       <button class="page-header__button button" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -44,7 +44,11 @@
       <h1 class="main-header__title header-title">Функциональное питание для котов</h1>
       <p class="main-header__slogan main-header-slogan">Занялся собой? Займись котом!</p>
       <a class="main-header__button button main-header-button" href="#">Подобрать программу</a>
-      <img src="images/index-cat-mobile.jpg" width="33" height="38" alt="Cat Energy.">
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-promo-desktop@1x.png 1x, images/index-promo-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-promo-tablet@1x.png 1x, images/index-promo-desktop@2x.png 2x">
+        <img src="images/index-promo-mobile@1x.png" srcset="images/index-promo-mobile@2x.jpg 2x" width="33" height="38" alt="Cat Energy.">
+      </picture>
     </section>
 
     <section class="catalog-options">
@@ -97,12 +101,12 @@
         <span class="example__sumup-more example-sumup">5 000 руб.</span>
       </p>
       <picture>
-        <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-before-food-tablet1x@1x.jpg 1x, images/cat-before-food-tablet2x@2x.jpg 2x">
-        <img class="example__img" src="images/cat-before-food-mobile1x@1x.jpg" srcset="images/cat-before-food-mobile2x@2x.jpg 2x" width="280" height="256" alt="Фото кота до.">
+        <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-before-food@1x.png 1x, images/cat-before-food@2x.png 2x">
+        <img class="example__img" src="images/cat-before-food-mobile@1x.png" srcset="images/cat-before-food-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до.">
       </picture>
       <picture>
-        <source width="560" height="512" type="image/jpeg" media="(min-width: 768px)" srcset="images/cat-after-food-tablet1x@1x.jpg 1x, images/cat-after-food-tablet2x@2x.jpg 2x">
-        <img class="example__img" src="images/cat-after-food-mobile1x@1x.jpg" srcset="images/cat-after-food-mobile2x@2x.jpg 2x" width="280" height="256" alt="Фото кота после.">
+        <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-after-food@1x.png 1x, images/cat-after-food@2x.png 2x">
+        <img class="example__img" src="images/cat-after-food-mobile@1x.png" srcset="images/cat-after-food@2x.png 2x" width="280" height="256" alt="Фото кота после.">
       </picture>
     </section>
 
@@ -111,9 +115,9 @@
       <div class="map-container">
         <div class="map">
           <picture>
-            <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop1x@1x.jpg 1x, images/map-desktop2x@2x.jpg 2x">
-            <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet1x@1x.jpg 1x, images/map-tablet2x@2x.jpg 2x">
-            <img class="map__img" src="images/map-mobile1x@1x.jpg" srcset="images/map-mobile2x@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8">
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+            <img class="map__img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8">
           </picture>
         </div>
         <div class="map__invitation invitation">
