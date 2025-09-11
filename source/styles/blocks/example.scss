@@ -1,17 +1,130 @@
+.example {
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #eaeaea;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 101px;
+    background: linear-gradient(to bottom, $basic-white 0, $basic-white 619px, #eaeaea 619px, #eaeaea 1081px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 75px;
+    background: linear-gradient(to bottom, $basic-white 0, $basic-white 136px, #eaeaea 136px);
+  }
+}
+
+.example__container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+    gap: 224px;
+  }
+}
+
+.example__text-wrapper {
+  margin-bottom: 99px;
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-bottom: 0;
+  }
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: left;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.example__text {
+  margin: 0;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
+.example__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 20px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+    justify-content: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 55px 42px;
+  }
+}
+
 .example__item {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 25px;
-  text-transform: uppercase;
+  width: 124px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
-.example__definition {
-  font-size: 12px;
-  line-height: 12px;
-  text-align: center;
+.example__item-price {
+  width: 186px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    width: 327px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.example__sumup {
-  font-family: "Oswald", sans-serif;
-  line-height: 20px;
+.example__image-wrapper {
+  position: relative;
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
 }
