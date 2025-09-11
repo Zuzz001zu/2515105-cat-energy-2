@@ -44,10 +44,8 @@
 }
 
 .page-header__button {
-  position: absolute;
   top: 20px;
   right: 0;
-  background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
     display: none;
