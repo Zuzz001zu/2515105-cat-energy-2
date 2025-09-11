@@ -1,0 +1,215 @@
+.catalog-options {
+  background-color: $basic-white;
+  color: $basic-black;
+}
+
+.cat-programs__container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.catalog-options__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 71px;
+  }
+}
+
+.catalog-options__item {
+  position: relative;
+  padding: 30px 33px 18px 20px;
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 77px 61px 55px 52px;
+  }
+}
+
+.catalog-options__item:last-child {
+  @media (min-width: $desktop-width) {
+    padding-right: 67px;
+  }
+}
+
+.catalog-options__item::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    top: 93px;
+    left: 445px;
+    width: 200px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.catalog-options__item--slim::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 27px;
+  width: 36px;
+  height: 50px;
+  background-image: url("../../icons/catalog-option-slim.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 81px;
+    left: 475px;
+    width: 140px;
+    height: 194px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 41px;
+    left: 67px;
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.catalog-options__item--pro::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 12px;
+  width: 67px;
+  height: 28px;
+  background-image: url("../../icons/catalog-option-pro.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 135px;
+    left: 411px;
+    width: 268px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 67px;
+    left: 33px;
+    width: 134px;
+    height: 56px;
+  }
+}
+
+.catalog-option__title {
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 29px;
+  line-height: 37px;
+  text-align: left;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 1px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+}
+
+.catalog-option__description {
+  margin: 0;
+  margin-bottom: 38px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.catalog-option__link {
+  display: inline-block;
+  font-family: $second-family;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.catalog-option__link::after {
+  content: "";
+  position: absolute;
+  left: 121px;
+  bottom: 24px;
+  width: 32px;
+  height: 10px;
+  background-color: $basic-black;
+  mask-image: url("../../icons/arrow-button.svg");
+  mask-size: 24px 12px;
+  mask-position: left;
+  mask-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 184px;
+    bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 64px;
+  }
+}
