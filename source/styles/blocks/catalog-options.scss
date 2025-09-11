@@ -1,6 +1,6 @@
 .catalog-options {
-  background-color: $basic-white;
-  color: $basic-black;
+  background-color: $white;
+  color: $black;
 }
 
 .cat-programs__container {
@@ -40,7 +40,7 @@
 .catalog-options__item {
   position: relative;
   padding: 30px 33px 18px 20px;
-  background-color: $basic-grey;
+  background-color: $grey;
 
   @media (min-width: $tablet-width) {
     padding: 77px 316px 53px 52px;
@@ -58,38 +58,13 @@
   }
 }
 
-.catalog-options__item::before {
-  content: "";
-  position: absolute;
-  top: 24px;
-  left: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: $basic-green;
-
-  @media (min-width: $tablet-width) {
-    top: 93px;
-    left: 445px;
-    width: 200px;
-    height: 200px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 47px;
-    left: 52px;
-    width: 100px;
-    height: 100px;
-  }
-}
-
 .catalog-options__item--slim::after {
   content: "";
   position: absolute;
   top: 21px;
-  left: 27px;
-  width: 36px;
-  height: 50px;
+  left: 20px;
+  width: 50px;
+  height: 53px;
   background-image: url("../../icons/catalog-option-slim.svg");
   background-size: cover;
   background-position: center;
@@ -98,25 +73,25 @@
   @media (min-width: $tablet-width) {
     top: 81px;
     left: 475px;
-    width: 140px;
-    height: 194px;
+    width: 200px;
+    height: 211px;
   }
 
   @media (min-width: $desktop-width) {
     top: 41px;
     left: 67px;
-    width: 70px;
-    height: 97px;
+    width: 100px;
+    height: 106px;
   }
 }
 
 .catalog-options__item--pro::after {
   content: "";
   position: absolute;
-  top: 35px;
-  left: 12px;
+  top: 24px;
+  left: 13px;
   width: 67px;
-  height: 28px;
+  height: 50px;
   background-image: url("../../icons/catalog-option-pro.svg");
   background-size: cover;
   background-position: center;
@@ -126,20 +101,20 @@
     top: 135px;
     left: 411px;
     width: 268px;
-    height: 112px;
+    height: 200px;
   }
 
   @media (min-width: $desktop-width) {
     top: 67px;
     left: 33px;
     width: 134px;
-    height: 56px;
+    height: 100px;
   }
 }
 
 .catalog-option__title {
   margin: 0;
-  margin-left: 70px;
+  margin-left: 20px;
   margin-bottom: 29px;
   line-height: 37px;
   text-align: left;
@@ -163,7 +138,7 @@
   margin-bottom: 38px;
   font-size: 14px;
   line-height: 18px;
-  color: $special-dark-grey;
+  color: $dark-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -177,13 +152,13 @@
 
 .catalog-option__link {
   display: inline-block;
-  font-family: $second-family;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
   text-align: left;
-  color: $basic-black;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -198,7 +173,7 @@
   bottom: 24px;
   width: 32px;
   height: 10px;
-  background-color: $basic-black;
+  background-color: $black;
   mask-image: url("../../icons/arrow-button.svg");
   mask-size: 24px 12px;
   mask-position: left;

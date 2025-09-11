@@ -1,6 +1,6 @@
 .food-description {
-  background-color: $basic-white;
-  color: $basic-black;
+  background-color: $white;
+  color: $black;
 }
 
 .food-description__wrapper {
@@ -57,7 +57,7 @@
   position: relative;
   font-size: 14px;
   line-height: 18px;
-  color: $special-dark-grey;
+  color: $dark-grey;
 
   @media (min-width: $tablet-width) {
     width: 227px;
@@ -78,7 +78,7 @@
   left: -80px;
   width: 60px;
   height: 60px;
-  background-color: $basic-green;
+  background-color: $green;
   background-position: center;
   background-repeat: no-repeat;
 

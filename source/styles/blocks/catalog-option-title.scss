@@ -1,10 +1,10 @@
 .catalog-option-title {
-  font-family: $second-family;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
-  color: $basic-black;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 32px;
