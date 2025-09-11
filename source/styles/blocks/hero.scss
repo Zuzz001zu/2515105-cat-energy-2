@@ -1,7 +1,7 @@
 .hero {
   width: 100%;
-  background-color: $basic-white;
-  color: $basic-black;
+  background-color: $white;
+  color: $black;
   position: relative;
 }
 
@@ -38,7 +38,7 @@
   margin-top: 27px;
   margin-bottom: 25px;
   text-align: center;
-  color: $basic-white;
+  color: $white;
 
   @media (min-width: $tablet-width) {
     width: 416px;
@@ -50,7 +50,7 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    color: $basic-black;
+    color: $black;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,14 +62,14 @@
 .page-header__slogan {
   margin: 0;
   margin-bottom: 27px;
-  font-family: $second-family;
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
   grid-column: 1/-1;
   grid-row: 2;
   text-transform: uppercase;
   text-align: center;
-  color: $basic-white;
+  color: $white;
 
   @media (min-width: $tablet-width) {
     width: 283px;
@@ -78,7 +78,7 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    color: $basic-black;
+    color: $black;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,7 +116,7 @@
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
-  color: $basic-white;
+  color: $white;
 
   @media (min-width: $tablet-width) {
     width: 242px;
@@ -130,56 +130,3 @@
     grid-area: 8/1/8/-1;
   }
 }
-
-/* @media (min-width: $desktop-width) {
-  .hero {
-    padding: 0;
-  }
-
-  .hero--grid {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-  }
-
-  .hero__inner {
-    max-width: 1440px;
-    padding-top: 0;
-    display: grid;
-    grid-template-columns: 557px 1fr 1fr;
-    grid-template-rows: 344px auto auto;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-desktop-bg@1x.jpg");
-    background-position: top right;
-    background-size: 720px 694px;
-    background-repeat: no-repeat;
-  }
-
-  .hero__title {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 224px;
-    margin-left: 190px;
-    margin-bottom: 0;
-  }
-
-  .hero__slogan {
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: 40px;
-    margin-left: 190px;
-    margin-bottom: 0;
-  }
-
-  .hero__link-programs {
-    position: static;
-    grid-column: 1;
-    grid-row: 3;
-    margin-top: 52px;
-    margin-left: 190px;
-    margin-bottom: 184px;
-  }
-
-  .hero__image {
-    grid-column: 2;
-    margin-top: 143px;
-  }
-} */

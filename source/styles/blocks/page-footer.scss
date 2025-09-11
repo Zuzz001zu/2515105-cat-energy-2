@@ -1,7 +1,7 @@
 .page-footer {
   padding: 40px 0;
-  background-color: $basic-grey;
-  color: $basic-black;
+  background-color: $grey;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     padding: 55px 0;
@@ -81,7 +81,7 @@
 .footer-copyright-link__text {
   font-size: 16px;
   line-height: 20px;
-  color: $special-dark-grey;
+  color: $dark-grey;
 }
 
 .page-footer__logo-developer {

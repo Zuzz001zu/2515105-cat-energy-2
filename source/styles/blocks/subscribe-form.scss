@@ -1,11 +1,11 @@
 .subscribe-form {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 20px;
   line-height: 100%;
 }
 
 .subscribe-form__button {
   line-height: 26px;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $white;
+  background-color: $green;
 }

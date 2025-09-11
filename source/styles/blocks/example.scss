@@ -2,18 +2,18 @@
   padding-top: 25px;
   padding-bottom: 40px;
   background-color: #eaeaea;
-  color: $basic-black;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
     padding-bottom: 101px;
-    background: linear-gradient(to bottom, $basic-white 0, $basic-white 619px, #eaeaea 619px, #eaeaea 1081px);
+    background: linear-gradient(to bottom, $white 0, $white 619px, #eaeaea 619px, #eaeaea 1081px);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 75px;
-    background: linear-gradient(to bottom, $basic-white 0, $basic-white 136px, #eaeaea 136px);
+    background: linear-gradient(to bottom, $white 0, $white 136px, #eaeaea 136px);
   }
 }
 
@@ -64,7 +64,7 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
-  color: $special-dark-grey;
+  color: $dark-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

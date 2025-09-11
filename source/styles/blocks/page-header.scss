@@ -1,14 +1,6 @@
 .page-header {
-  color: $basic-black;
-  background-color: $basic-white;
-
-  @media (min-width: $desktop-width) {
-    // display: grid;display
-    // grid-template-columns: 50% 50%;grid-template-columns
-    // grid-template-rows: 114px 580px;grid-template-rows
-    // justify-content: center;justify-content
-    // padding-bottom: 82px;padding-bottom
-  }
+  color: $black;
+  background-color: $white;
 }
 
 .container {
