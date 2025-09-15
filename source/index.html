@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico">
@@ -15,50 +15,61 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="main-header main-header--desktop ">
+    <div class="main-header__container">
+      <div class="main-header__header-container">
+        <div class="main-header__header">
+          <a class="main-header__logo-link main-header__logo-link--picture" href="index.html">
+            <span class="visually-hidden">Лого Кэт Энерджи</span>
+            <picture>
+              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+              <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Cat Energy лого.">
+            </picture>
+          </a>
+          <a class="main-header__logo-link" href="index.html">
+            <span class="visually-hidden">Логотип Кэт Энерджи</span>
+            <picture>
+              <source width="118" height="21" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-slogan.svg">
+              <img class="logo__text logo-text" src="images/logo-slogan.svg" width="101" height="18" alt="Cat Energy лого.">
+            </picture>
+          </a>
+          <button class="button-menu-open" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="navigation navigation--open">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link-active navigation__link-current--index-desktop" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item navigation__item--last">
+              <a class="navigation__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-    <div class="container">
-      <nav class="page-header__nav navigation">
-        <a class="page-header__link logo" href="#" area-current="page">
-          <picture>
-            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-            <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Cat Energy лого.">
-          </picture>
-          <img class="logo__text" src="images/logo-slogan.svg" width="101" height="20" alt="Функциональное питание для котов «Cat Energy».">
-        </a>
-        <ul class="navigation__list navigation-list">
-          <li class="navigation-list__item navigation-list-item navigation-list__item--active">
-            <a class="navigation__link" href="#">Главная</a>
-          </li>
-          <li class="navigation-list__item navigation-list-item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation-list__item navigation-list-item">
-            <a class="navigation__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-      <button class="page-header__button button-toggle button-toggle--current button-toggle--open" type="button">
-        <span class="visually-hidden">Открыть и закрыть меню</span>
-      </button>
-    </div>
-
-    <section class="page-header__hero hero">
-      <div class="hero__inside">
-        <h1 class="page-header__title hero-title">Функциональное питание для котов</h1>
-        <p class="page-header__slogan hero-slogan">Занялся собой? Займись котом!</p>
-        <div class="hero__image">
+      <section class="main-header__hero hero hero--mobile">
+        <div class="hero__title-container">
+          <h1 class="hero__title">Функциональное<br>питание для котов</h1>
+        </div>
+        <div class="hero__slogan-container">
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="hero__image-container">
           <picture>
             <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-promo-desktop@1x.png 1x, images/index-promo-desktop@2x.png 2x">
             <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-promo-tablet@1x.png 1x, images/index-promo-desktop@2x.png 2x">
             <img class="hero__picture" src="images/index-promo-mobile@1x.png" srcset="images/index-promo-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy.">
           </picture>
         </div>
-        <a class="page-header__button button hero-header-button" href="form-programs.html">Подобрать программу</a>
-      </div>
-    </section>
-
+        <a class="button button--find-program" href="#">Подобрать программу</a>
+      </section>
+    </div>
   </header>
 
   <main class="main-container">
