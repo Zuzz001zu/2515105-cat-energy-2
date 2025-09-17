@@ -1,19 +1,20 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.common-container {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
-a {
-  text-decoration: none;
+.container-wider {
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
 
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip-path: inset(50%);
-  overflow: hidden;
-  white-space: nowrap;
+.container-without-margin {
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
