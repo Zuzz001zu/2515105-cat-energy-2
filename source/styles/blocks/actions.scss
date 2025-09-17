@@ -1,0 +1,148 @@
+.actions {
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 96px 0 104px;
+  }
+}
+
+.actions__header {
+  position: relative;
+  margin: 0 0 32px;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 66px;
+    padding: 0 0 0 30px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 72px;
+    padding: 0 0 0 70px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.actions__header-container {
+  padding: 0 40px 0 20px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: $green;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 18px;
+    }
+  }
+}
+
+.actions__text {
+  min-height: 48px;
+  margin: 0 20px 24px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 64px;
+    margin: 0 68px 24px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 32px;
+    margin: 0 110px 24px;
+  }
+}
+
+.actions__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+    margin: 0 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+    margin: 0 auto;
+  }
+}
+
+.actions__email-label {
+  flex-grow: 1;
+}
+
+.actions__email-input {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $black-1;
+  text-transform: uppercase;
+  border: 1px solid $grey-7;
+
+  &::placeholder {
+    color: inherit;
+  }
+
+  &:hover {
+    border-color: $grey-5;
+  }
+
+  &:focus-visible {
+    border-color: $black;
+    outline: 2px solid $black;
+    outline-offset: -2px;
+  }
+
+  &:invalid {
+    border-color: $red;
+    outline: 2px solid $red;
+    outline-offset: -2px;
+  }
+}
+
+.actions__button {
+  padding: 15px;
+  font-size: 20px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}
