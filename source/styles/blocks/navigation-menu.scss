@@ -1,0 +1,82 @@
+.navigation-menu {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: $white;
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    background: transparent;
+  }
+}
+
+.navigation-menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    column-gap: 33px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+      background: transparent;
+    }
+  }
+}
+
+.navigation-menu__item {
+  border-bottom: 1px solid $grey-2;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.navigation-menu__link {
+  position: relative;
+  display: block;
+  padding: 22px 24px 24px;
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+
+    &--current::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $green;
+    }
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.navigation-menu__list--index .navigation-menu__link--current::after {
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
