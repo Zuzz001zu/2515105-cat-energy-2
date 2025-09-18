@@ -13,14 +13,13 @@
   @media (min-width: $desktop-width) {
     padding: 55px 110px 29px;
   }
+    }
 
-  &--index {
+.page-header--index {
     @media (min-width: $desktop-width) {
       width: 1220px;
       align-self: center;
     }
-  }
-}
 
 .page-header__logo-container {
   display: flex;
@@ -129,4 +128,5 @@
   &--no-js {
     display: none;
   }
+}
 }
