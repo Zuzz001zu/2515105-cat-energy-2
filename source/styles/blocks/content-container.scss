@@ -1,0 +1,18 @@
+.content-container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  padding-left: $content-padding-mobile;
+  padding-right: $content-padding-mobile;
+
+  @media (min-width: $tablet-width) {
+    padding-left: $content-padding-tablet;
+    padding-right: $content-padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $content-padding-desktop;
+    padding-right: $content-padding-desktop;
+  }
+}

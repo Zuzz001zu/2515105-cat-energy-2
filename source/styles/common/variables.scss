@@ -7,6 +7,15 @@ $tablet-width: 768px;
 $desktop-width: 1440px;
 $mobile-width: 320px;
 
+
+$content-padding-mobile: 20px;
+$content-padding-tablet: 30px;
+$content-padding-desktop: 40px;
+
+$content-width-mobile: $mobile-width - ($content-padding-mobile * 2);
+$content-width-tablet: $tablet-width - ($content-padding-tablet * 2);
+$content-width-desktop: $desktop-width - ($content-padding-desktop * 2);
+
 //colors
 $black: #000000;
 $white: #ffffff;
@@ -30,4 +39,5 @@ $grey-6: #d9d9d9;
 $grey-7: #e7e7e7;
 $black: #000000;
 $red: #ff8282;
+
 
