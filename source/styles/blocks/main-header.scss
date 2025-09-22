@@ -1,0 +1,60 @@
+.main-header {
+  padding-top: 13px;
+  color: $black;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+  }
+}
+
+.main-header__container {
+  position: relative;
+}
+
+.main-header__nav {
+  position: relative;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 0;
+    gap: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 538px;
+  }
+}
+
+.main-header__button {
+  position: absolute;
+  top: 0;
+  right: 21px;
+  background-image: url("../../icons/stack.svg#menu-mobile");
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &--close {
+    top: 5px;
+    right: 17px;
+    background-image: url("../../icons/stack.svg#menu-close-mobile");
+    background-size: 20px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--nojs {
+    background-image: none;
+  }
+}
