@@ -1,0 +1,108 @@
+.slider {
+  position: relative;
+  display: grid;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $viewport-tablet) {
+    width: 560px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    grid-area: 1 / 2 / 4 / 3;
+  }
+}
+
+.slider__toggle {
+  position: absolute;
+  display: block;
+  padding: 0;
+  top: 0;
+  left: 137px;
+  border: none;
+  border-radius: 2px;
+  background-color: #666666;
+  width: 4px;
+  height: 256px;
+  z-index: 4;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 119px;
+    left: -10px;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#live-example-toggle");
+    mask-repeat: no-repeat;
+    width: 24px;
+    height: 18px;
+    z-index: 5;
+
+    @media (min-width: $viewport-tablet) {
+      top: 247px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 108px;
+    left: -18px;
+    background-color: #ffffff;
+    border: 2px solid  #666666;
+    border-radius: 50%;
+    z-index: 1;
+    box-sizing: border-box;
+
+    @media (min-width: $viewport-tablet) {
+      top: 236px;
+    }
+  }
+
+  &:hover,
+  &:hover::before {
+    background-color: #68b738;
+  }
+
+  &:hover::after {
+    border-color: #68b738;
+  }
+
+  &:active,
+  &:active::before {
+    background-color: #5eaa2f;
+  }
+
+  &:active::after {
+    border-color: #5eaa2f;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    height: 512px;
+    left: 278px;
+  }
+}
+
+.slider__image {
+  display: block;
+}
+
+.slider__image-wrapper {
+  grid-area: 1 / 1 / 2 / 2;
+  overflow: hidden;
+}
+
+.slider__image-wrapper--over {
+  z-index: 2;
+  background-color: #eaeaea;
+
+  @media (min-width: $viewport-tablet) {
+    background-image: linear-gradient(#ffffff 151px, #eaeaea 151px);
+  }
+
+  @media (min-width: $viewport-desktop) {
+    background-image: linear-gradient(#ffffff 138px, #f2f2f2 138px);
+  }
+}

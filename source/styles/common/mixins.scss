@@ -1,15 +1,23 @@
+/* ДЛЯ ШРИФТОВ */
 @mixin font-face($font-family, $font-weight, $font-style, $font-src) {
   @font-face {
     font-family: $font-family;
-    font-weight: $font-weight;
-    font-style: $font-style;
-    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
     src: $font-src;
+    font-display: swap;
   }
 }
 
-@mixin list-reset($padding-left: 0) {
+/* ДЛЯ СБРОСА СТИЛЕЙ СПИСКОВ */
+@mixin list-style-reset() {
   margin: 0;
-  padding-left: $padding-left;
-  list-style: none;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* ДЛЯ СБРОСА ВНЕШНИХ И ВНУТРЕННИХ ОТСТУПОВ */
+@mixin mp-reset() {
+  margin: 0;
+  padding: 0;
 }

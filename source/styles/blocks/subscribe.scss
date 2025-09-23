@@ -1,0 +1,122 @@
+.subscribe {
+  font-family: $headers-font;
+  font-weight: 400;
+  background-color: #ffffff;
+  padding-bottom: 40px;
+
+  @media (min-width: $viewport-tablet) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding-bottom: 104px;
+  }
+}
+
+.subscribe__title {
+  @include mp-reset();
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+  max-width: 260px;
+
+  @media (min-width: $viewport-tablet) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+    margin-bottom: 66px;
+    max-width: 650px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 74px;
+    max-width: 1100px;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $viewport-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: 0 auto;
+    width: 632px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    width: 752px;
+  }
+}
+
+.subscribe__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+
+  @media (min-width: $viewport-tablet) {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 24px;
+    line-height: 32px;
+    width: 632px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    grid-column: 1 / -1;
+    width: 752px;
+  }
+}
+
+.subscribe__input {
+  margin-bottom: 16px;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  padding: 13px;
+  font-family: $headers-font;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #444444;
+  min-width: 280px;
+  height: 56px;
+  outline: none;
+
+  &:user-invalid {
+    border-width: 2px;
+    border-color: #ff8282;
+  }
+
+  &--enter-error { /* класс для обозначения ошибки ввода в input */
+    border-width: 2px;
+    border-color: #ff8282;
+  }
+
+  &::placeholder {
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus-visible {
+    border-width: 2px;
+    border-color: #444444;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    margin-bottom: 0;
+    min-width: 376px;
+  }
+
+  @media (min-width: $viewport-desktop) {
+    min-width: 496px;
+  }
+}
