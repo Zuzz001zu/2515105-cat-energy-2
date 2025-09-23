@@ -1,5 +1,5 @@
 
-.additional-products__title {
+.additional-catalog-products__title {
   font-family: $headers-font;
   font-weight: 400;
   font-size: 24px;
@@ -25,7 +25,7 @@
   }
 }
 
-.additional-products__list {
+.additional-catalog-products__list {
   @include list-style-reset();
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@
   }
 }
 
-.additional-products__item {
+.additional-catalog-products__item {
   position: relative;
 
   &::before {
@@ -79,7 +79,7 @@
   }
 }
 
-.additional-products__item:last-child::after {
+.additional-catalog-products__item:last-child::after {
   content: "";
   position: absolute;
   display: block;
@@ -97,7 +97,7 @@
   }
 }
 
-.additional-products__item-title {
+.additional-catalog-products__item-title {
   @include mp-reset();
   font-size: 16px;
   line-height: 16px;
@@ -118,7 +118,7 @@
   }
 }
 
-.additional-products__info {
+.additional-catalog-products__info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
@@ -138,8 +138,8 @@
   }
 }
 
-.additional-products__name,
-.additional-products__cost {
+.additional-catalog-products__name,
+.additional-catalog-products__cost {
   font-size: 14px;
   line-height: 14px;
   color: #444444;
@@ -150,7 +150,7 @@
   }
 }
 
-.additional-products__name {
+.additional-catalog-products__name {
   max-width: 140px;
 
   @media (min-width: $viewport-desktop) {
@@ -158,7 +158,7 @@
   }
 }
 
-.additional-products__cost {
+.additional-catalog-products__cost {
   max-width: 140px;
 
   @media (min-width: $viewport-tablet) {
@@ -172,7 +172,7 @@
   }
 }
 
-.additional-products__order-all {
+.additional-catalog-products__order-all {
   position: relative;
   width: 100%;
   min-height: 290px;
@@ -221,7 +221,7 @@
   }
 }
 
-.additional-products__text {
+.additional-catalog-products__text {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -241,7 +241,7 @@
   }
 }
 
-.additional-products__wrapper {
+.additional-catalog-products__container {
   @media (min-width: $viewport-desktop) {
     position: relative;
     display: flex;

@@ -12,7 +12,7 @@
   }
 }
 
-.contacts__map-wrapper {
+.contacts__map-container {
   width: 100%;
   background-image: image-set(url("../../images/map-mobile@1x.webp") 1x, url("../../images/map-mobile@2x.webp") 2x, url("../../images/map-mobile@1x.jpg") 1x, url("../../images/map-mobile@2x.jpg") 2x);
   background-repeat: no-repeat;
@@ -89,7 +89,7 @@
   }
 }
 
-.contacts__address-wrap {
+.contacts__address-container {
   width: 140px;
 
   @media (min-width: $viewport-tablet) {

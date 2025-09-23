@@ -1,4 +1,4 @@
-.products {
+.catalog-products {
   position: relative;
   background-color: #ffffff;
   padding-top: 27px;
@@ -27,7 +27,7 @@
   }
 }
 
-.products__title {
+.catalog-products__title {
   font-family: $headers-font;
   font-weight: 400;
   font-size: 36px;
@@ -42,7 +42,7 @@
   }
 }
 
-.products__card-list {
+.catalog-products__card-list {
   @include list-style-reset();
   display: flex;
   flex-direction: column;

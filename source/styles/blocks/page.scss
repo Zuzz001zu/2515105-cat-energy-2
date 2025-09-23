@@ -17,7 +17,7 @@
   min-height: 100vh;
 }
 
-.page__catalog {
+.page__catalog-choice {
   margin-block: 20px;
 
   @media (min-width: $viewport-tablet) {
@@ -31,7 +31,7 @@
   }
 }
 
-.page__how-it-works {
+.page__food-description {
   margin-bottom: 25px;
 
   @media (min-width: $viewport-tablet) {
@@ -43,7 +43,7 @@
   }
 }
 
-.page__live-example {
+.page__example {
   position: relative;
 
   &::before {
@@ -59,7 +59,7 @@
   }
 }
 
-.page__products {
+.page__catalog-products {
   margin-bottom: 25px;
 
   @media (min-width: $viewport-tablet) {
@@ -71,7 +71,7 @@
   }
 }
 
-.page__additional-products {
+.page__additional-catalog-products {
   margin-bottom: 39px;
 
   @media (min-width: $viewport-tablet) {

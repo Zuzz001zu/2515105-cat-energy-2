@@ -1,4 +1,4 @@
-.live-example {
+.example {
   padding-top: 25px;
   padding-bottom: 40px;
   background-color: #eaeaea;
@@ -18,7 +18,7 @@
   }
 }
 
-.live-example__wrapper {
+.example__container {
   font-family: $headers-font;
   margin-bottom: 20px;
 
@@ -34,7 +34,7 @@
   }
 }
 
-.live-example__title {
+.example__title {
   @include mp-reset();
   font-weight: 400;
   font-size: 36px;
@@ -53,7 +53,7 @@
   }
 }
 
-.live-example__text {
+.example__text {
   font-family: $general-font;
   color: #444444;
   width: 100%;
@@ -73,7 +73,7 @@
   }
 }
 
-.live-example__facts-wrapper {
+.example__facts-container {
   @media (min-width: $viewport-tablet) {
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@
   }
 }
 
-.live-example__facts-list {
+.example__facts-list {
   @include list-style-reset();
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +101,7 @@
   }
 }
 
-.live-example__facts-item {
+.example__facts-item {
   position: relative;
   display: flex;
   justify-content: center;
@@ -119,7 +119,7 @@
   }
 }
 
-.live-example__facts-legend {
+.example__facts-legend {
   position: absolute;
   top: 46px;
   left: 19px;
@@ -146,14 +146,14 @@
   }
 }
 
-.live-example__facts-legend--long {
+.example__facts-legend--long {
   @media (min-width: $viewport-tablet) {
     width: 142px;
     left: 10px;
   }
 }
 
-.live-example__facts-text {
+.example__facts-text {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
@@ -164,7 +164,7 @@
   }
 }
 
-.live-example__cost-wrap {
+.example__price-container {
   width: 188px;
   margin: 0 auto;
 
@@ -184,8 +184,8 @@
   }
 }
 
-.live-example__cost-title,
-.live-example__cost-price {
+.example__price-title,
+.example__price-number {
   line-height: 20px;
   text-transform: uppercase;
 
@@ -201,19 +201,19 @@
   }
 }
 
-.live-example__cost-title {
+.example__cost-title {
   @media (min-width: $viewport-tablet) {
     max-width: 174px;
   }
 }
 
-.live-example__cost-price {
+.example__cost-price {
   @media (min-width: $viewport-tablet) {
     max-width: 90px;
   }
 }
 
-.live-example__slider {
+.example__slider {
   @media (min-width: $viewport-tablet) {
     background-image: linear-gradient(#ffffff 151px, #eaeaea 151px);
     padding-bottom: 101px;

@@ -1,4 +1,4 @@
-.main-header {
+.page-header {
   background-color: #ffffff;
 
   @media (min-width: $viewport-tablet) {
@@ -14,7 +14,7 @@
   }
 }
 
-.main-header__wrapper {
+.page-header__container {
   min-width: 320px;
 
   @media (min-width: $viewport-tablet) {
@@ -27,7 +27,7 @@
   }
 }
 
-.main-header--desktop-background {
+.page-header--desktop-background {
   @media (min-width: $viewport-desktop) {
     background-image: image-set(url("../../images/hero-cat-full-desktop@1x.webp") type("image/webp") 1x, url("../../images/hero-cat-full-desktop@2x.webp") type("image/webp") 2x, url("../../images/hero-cat-full-desktop@1x.jpg") 1x, url("../../images/hero-cat-full-desktop@2x.jpg") 2x), linear-gradient(to right, #62a53b, #62a53b);
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
   }
 }
 
-.main-header__header-wrap {
+.page-header__header-container {
   @media (min-width: $viewport-tablet) {
     display: flex;
     align-items: center;
@@ -47,7 +47,7 @@
   }
 }
 
-.main-header__header {
+.page-header__header {
   display: flex;
   align-items: center;
   padding-top: 13px;
@@ -71,7 +71,7 @@
   }
 }
 
-.main-header__hero {
+.page-header__hero {
   @media (min-width: $viewport-tablet) {
     margin: 0 auto;
     width: 708px;
@@ -84,7 +84,7 @@
   }
 }
 
-.main-header__logo-link {
+.page-header__logo-link {
   width: 101px;
 
   &:hover,
@@ -97,7 +97,7 @@
   }
 }
 
-.main-header__logo-link--picture {
+.page-header__logo-link--picture {
   margin-right: 55px;
   width: 33px;
 
@@ -111,11 +111,11 @@
   }
 }
 
-.main-header__logo-image {
+.page-header__logo-image {
   display: block;
 }
 
-.main-header__logo-text {
+.page-header__logo-text {
   display: block;
   margin-right: 73px;
 }
