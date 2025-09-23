@@ -1,0 +1,67 @@
+.title-greenline {
+  position: relative;
+  width: fit-content;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: calc(((100vw - 280px) / 2) * -1);
+    width: 100vw;
+    height: 2px;
+    background-color: #68b738;
+    z-index: -2;
+
+    @media (min-width: $viewport-tablet) {
+      top: 14px;
+      left: calc(((100vw - 708px) / 2) * -1);
+    }
+
+    @media (min-width: $viewport-desktop) {
+      top: 20px;
+      left: calc(((100vw - 1220px) / 2) * -1);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2px;
+    left: -40px;
+    width: calc(100% + 80px);
+    background-color: #ffffff;
+    top: 11px;
+    z-index: -1;
+
+    @media (min-width: $viewport-tablet) {
+      width: calc(100% + 40px);
+      top: 14px;
+      left: 0;
+    }
+
+    @media (min-width: $viewport-desktop) {
+      width: calc(100% + 80px);
+      top: 20px;
+      left: -40px;
+    }
+  }
+}
+
+.title-greenline--form-tablet::before {
+  @media (min-width: $viewport-tablet) {
+    left: calc(((100vw - 628px) / 2) * -1);
+  }
+
+  @media (min-width: $viewport-desktop) {
+    left: calc(((100vw - 1220px) / 2) * -1);
+  }
+}
+
+.title-greenline--form-tablet::after {
+  @media (min-width: $viewport-tablet) {
+    width: calc(100% + 80px);
+    left: -40px;
+  }
+}
