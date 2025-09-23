@@ -1,4 +1,4 @@
-.products-card {
+.catalog-products-card {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -33,7 +33,7 @@
   }
 }
 
-.products-card--more {
+.catalog-products-card--more {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,7 +63,7 @@
   }
 }
 
-.products-card__image-link {
+.catalog-products-card__image-link {
   grid-area: 1 / 1 / 3 / 2;
 
   &:hover,
@@ -84,8 +84,8 @@
   }
 }
 
-.products-card__title-link,
-.products-card__more-title {
+.catalog-products-card__title-link,
+.catalog-products-card__more-title {
   font-family: $headers-font;
   font-weight: 400;
   text-decoration: none;
@@ -100,7 +100,7 @@
   }
 }
 
-.products-card__title-link {
+.catalog-products-card__title-link {
   width: 76px;
   margin-bottom: 14px;
   grid-area: 1 / 2 / 2 / 3;
@@ -128,9 +128,9 @@
   }
 }
 
-.products-card__details,
-.products-card__detail,
-.products-card__more-text {
+.catalog-products-card__info,
+.catalog-products-card__info-description,
+.catalog-products-card__more-text {
   @include mp-reset();
   font-size: 12px;
   line-height: 16px;
@@ -142,7 +142,7 @@
   }
 }
 
-.products-card__details {
+.catalog-products-card__info {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -161,12 +161,12 @@
   }
 }
 
-.products-card__detail {
+.catalog-products-card__info-description {
   justify-self: end;
   max-width: 50%;
 }
 
-.products-card__details-wrap {
+.catalog-products-card__info-container {
   position: relative;
   display: flex;
   gap: 20px;
@@ -185,8 +185,8 @@
     }
   }
 
-  &:last-child .products-card__details-name,
-  &:last-child .products-card__detail {
+  &:last-child .catalog-products-card__info-term,
+  &:last-child .catalog-products-card__info-description {
     @media (min-width: $viewport-desktop) {
       margin-bottom: 4px;
     }
@@ -229,11 +229,11 @@
   }
 }
 
-.products-card__details-name {
+.catalog-products-card__info-term {
   max-width: 50%;
 }
 
-.products-card__more-title {
+.catalog-products-card__more-title {
   position: relative;
   margin: 0;
   padding-top: 59px;
@@ -291,7 +291,7 @@
   }
 }
 
-.products-card__more-text {
+.catalog-products-card__more-text {
   margin-bottom: 22px;
   text-align: center;
 
@@ -306,7 +306,7 @@
   }
 }
 
-.products-card__wrap {
+.catalog-products-card__container {
   width: 140px;
   height: 107px;
   display: flex;
@@ -323,6 +323,6 @@
   }
 }
 
-.products-card__image {
+.catalog-products-card__image {
   display: block;
 }

@@ -89,12 +89,12 @@
   display: block;
 }
 
-.slider__image-wrapper {
+.slider__image-container {
   grid-area: 1 / 1 / 2 / 2;
   overflow: hidden;
 }
 
-.slider__image-wrapper--over {
+.slider__image-container--over {
   z-index: 2;
   background-color: #eaeaea;
 

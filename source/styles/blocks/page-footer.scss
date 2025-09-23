@@ -1,4 +1,4 @@
-.main-footer {
+.page-footer {
   background-color: #f2f2f2;
   padding-block: 40px;
   padding-inline: 20px;
@@ -15,7 +15,7 @@
   }
 }
 
-.main-footer__wrapper {
+.page-footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,11 +35,11 @@
   }
 }
 
-.main-footer__logo-link-svg {
+.page-footer__logo-link-svg {
   fill: #111111;
 }
 
-.main-footer__logo-link {
+.page-footer__logo-link {
   margin-bottom: 15px;
 
   &:hover .main-footer__logo-link-svg {
@@ -56,7 +56,7 @@
   }
 }
 
-.main-footer__socials {
+.page-footer__socials {
   margin: 0;
   margin-bottom: 19px;
 
@@ -65,7 +65,7 @@
   }
 }
 
-.main-footer__academy-logo-link {
+.page-footer__academy-logo-link {
   display: flex;
   align-items: center;
   gap: 21px;
@@ -90,7 +90,7 @@
   }
 }
 
-.main-footer__academy-logo-text-link {
+.page-footer__academy-logo-text-link {
   width: 114px;
 
   @media (min-width: $viewport-tablet) {
@@ -98,6 +98,6 @@
   }
 }
 
-.main-footer__academy-logo-svg {
+.page-footer__academy-logo-svg {
   fill: #666666;
 }

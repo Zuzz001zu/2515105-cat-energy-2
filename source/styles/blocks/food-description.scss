@@ -1,9 +1,9 @@
-.how-it-works {
+.food-description {
   box-sizing: border-box;
   padding-bottom: 24px;
 }
 
-.how-it-works__title {
+.food-description__title {
   @include mp-reset();
   font-family: $headers-font;
   font-weight: 400;
@@ -20,7 +20,7 @@
   }
 }
 
-.how-it-works__list {
+.food-description__list {
   @include list-style-reset();
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
   }
 }
 
-.how-it-works__item {
+.food-description__item {
   position: relative;
   width: 100%;
   min-height: 60px;
@@ -83,23 +83,23 @@
   }
 }
 
-.how-it-works__item--leaf::before {
+.food-description__item--first::before {
   background-image: url("../../icons/stack.svg#how-it-works-leaf");
 }
 
-.how-it-works__item--powder::before {
+.food-description__item--second::before {
   background-image: url("../../icons/stack.svg#how-it-works-powder");
 }
 
-.how-it-works__item--eat::before {
+.food-description__item--third::before {
   background-image: url("../../icons/stack.svg#how-it-works-eat");
 }
 
-.how-it-works__item--clock::before {
+.food-description__item--fourth::before {
   background-image: url("../../icons/stack.svg#how-it-works-clock");
 }
 
-.how-it-works__text {
+.food-description__text {
   position: relative;
   color: #444444;
   margin: 0;
@@ -117,7 +117,7 @@
   }
 }
 
-.how-it-works__item-clock-br {
+.food-description__item-broken {
   display: none;
 
   @media (min-width: $viewport-tablet) {
